@@ -16,7 +16,7 @@ public class AnagramJob {
         job.setJarByClass(AnagramJob.class);
         job.setMapperClass(AnagramMapper.class);
         job.setReducerClass(AnagramReducer.class);
-
+        job.setNumReduceTasks(1);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
